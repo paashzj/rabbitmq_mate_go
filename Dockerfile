@@ -14,4 +14,4 @@ COPY --from=build /opt/sh/compile/pkg/rabbitmq_mate /opt/sh/rabbitmq/mate/rabbit
 
 WORKDIR /opt/sh/rabbitmq
 
-CMD ["/usr/local/bin/dumb-init", "bash", "-vx", "/opt/sh/rabbitmq/mate/scripts/start.sh"]
+CMD ["/usr/bin/dumb-init", "bash", "-vx", "/opt/sh/rabbitmq/mate/scripts/start.sh"]
